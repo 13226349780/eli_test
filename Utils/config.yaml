@@ -1,0 +1,24 @@
+test_login:
+  info: 登录页的元素以及操作
+  username_input: cn.eliteu.android:id/email_et
+  username: 13226349780
+  password_input: cn.eliteu.android:id/password_et
+  pawwword: 19940919
+  confirm: cn.eliteu.android:id/login_button_layout
+  LA: .LoginActivity
+  mainye: MyCoursesListActivity
+test_ls:
+  info: 跳过后登录
+  skip: cn.eliteu.android:id/actionbar_skip_btn
+  mainye:  .MyCoursesListActivity
+  nav: android.widget.ImageButton
+  login_btn: cn.eliteu.android:id/navigation_login_button
+  LA: LoginActivity
+test_lk:
+  LA: LoginActivity
+  skip:  cn.eliteu.android:id/actionbar_skip_btn
+  mainye: .MyCoursesListActivity
+  select: cn.eliteu.android:id/course_btn
+  courses: android.widget.RelativeLayout
+  wa: EliteuCourseDetailActivity
+  join: cn.eliteu.android:id/button_enroll_now
