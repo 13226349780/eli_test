@@ -5,7 +5,7 @@ from time import sleep, time
 
 from appium import webdriver
 
-from Utils.Operate import swipe_up
+from Utils.Operate import su
 from Utils.getyaml import yl
 
 PATH = lambda p: os.path.abspath(
@@ -31,18 +31,10 @@ class test_login(unittest.TestCase):
         #每次是否重新安装
         #desired_caps['noReset'] = True
         self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
-
     def tearDown(self):
         self.driver.quit()
 
-    def test_l(self):
-        sleep(10)
-        swipe_up()
-
-
-
-"""
-  #直接登录
+    #直接登录
     def test_1_login_login(self):
         self.driver.wait_activity(yl['test_login']['LA'],10,1)
         UserName = self.driver.find_element_by_id(yl['test_login']['username_input'])
@@ -94,16 +86,16 @@ class test_login(unittest.TestCase):
         #print(course[1].text)
         course[1].click()
         self.driver.wait_activity(yl['test_lk']['wa'],10,1)
-        swipe_up()
 
-        #self.driver.swipe(579,1500,579,800,2000)
+
+        self.driver.swipe(579,1500,579,800,2000)
         join = self.driver.find_element_by_id(yl['test_lk']['join'])
         join.click()
         ac = self.driver.current_activity
         acq = ac.split('.')
         print(acq[-1])
         assert (acq[-1] == yl['test_lk']['LA'])
-"""
+
 
 
 
