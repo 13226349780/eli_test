@@ -18,16 +18,7 @@ print(activity)
 
 assert (1 == 0)
 """
+from Utils.getyaml import yl
 
+print(yl['test_buy']['course_ac'])
 
-class A:  # 这是正常情况
-    def fa(self):
-        print("from A")
-
-    def test(self):
-        self.fa()
-
-
-class B(A):
-    def fa(self):
-        print("from B")

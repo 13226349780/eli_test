@@ -22,3 +22,20 @@ test_lk:
   courses: android.widget.RelativeLayout
   wa: EliteuCourseDetailActivity
   join: cn.eliteu.android:id/button_enroll_now
+
+
+
+test_buy:
+  wa: .MyCoursesListActivity
+  find_course: cn.eliteu.android:id/course_btn
+  course_ac: .NativeFindCoursesActivity
+  find_content: android.widget.RelativeLayout
+  course_ac: .EliteuCourseDetailActivity
+  select_buy: .SelectCourseTableActivity
+  join_buy: cn.eliteu.android:id/button_enroll_now
+  select_course: cn.eliteu.android:id/select_course_table_item_cb
+  commit: cn.eliteu.android:id/submit_buy_course
+
+
+
+
